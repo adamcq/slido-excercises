@@ -23,8 +23,3 @@
   cursor: pointer;
   border-radius: 12px;
 }
-
-.UpdateRequired {
-  color: red;
-  font-size: 2rem;
-}

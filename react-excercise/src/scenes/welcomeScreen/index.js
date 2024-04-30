@@ -2,14 +2,17 @@ import React from 'react'
 import '../../styles/welcomeScreen.css'
 import Footer from '../../components/footer'
 
-const WelcomeScreen = ({ showUpdateRequired, appName, os, appVersion }) => {
+const WelcomeScreen = ({appName, appVersion, os}) => {
   return (
     <div className='WelcomeScreen'>
       <div>
         <button className='GettingStartedButton'>Getting Started</button>
-        {showUpdateRequired ? <p className='UpdateRequired'>Update required</p> : null}
       </div>
-      <Footer appName={appName} os={os} appVersion={appVersion} />
+      <Footer 
+        appName={appName}
+        appVersion={appVersion}
+        os={os}
+      />
     </div>
   )
 }

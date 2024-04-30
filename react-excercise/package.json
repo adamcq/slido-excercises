@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "react-excercise",
   "version": "0.1.0",
   "private": true,
@@ -35,6 +36,17 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.5",
+    "jest": "^27.4.7",
+    "react-test-renderer": "^18.3.1"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!query-string)"
     ]
   }
 }
