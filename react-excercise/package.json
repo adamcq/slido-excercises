@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "react-excercise",
   "version": "0.1.0",
   "private": true,
@@ -39,14 +38,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.24.5",
-    "jest": "^27.4.7",
     "react-test-renderer": "^18.3.1"
   },
   "jest": {
-    "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!query-string)"
-    ]
+      "node_modules/(?!(query-string|decode-uri-component|split-on-first|filter-obj)/)"
+  ]
   }
 }

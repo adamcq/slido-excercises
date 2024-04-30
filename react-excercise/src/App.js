@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import semver from 'semver';
 import queryString from 'query-string';
+import semver from 'semver';
 import './styles/App.css';
 import WelcomeScreen from './scenes/welcomeScreen';
 import UpdateRequiredScreen from './scenes/updateRequiredScreen';
