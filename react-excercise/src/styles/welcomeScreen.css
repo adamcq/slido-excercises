@@ -1,0 +1,30 @@
+.WelcomeScreen {
+  margin: 0;
+  background-color: #282c34;
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.GettingStartedButton {
+  background-color: #61dafb;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.UpdateRequired {
+  color: red;
+  font-size: 2rem;
+}
