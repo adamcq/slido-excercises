@@ -1,7 +1,7 @@
 # slido-excercises
 Home excercises for Slido interview.
 ## react-excercises (COMPLETED)
-This folder contains the react excercise.
+This folder contains the react excercise. This application shows welcome screen or update required sceen depending on the query string in the URL.
 
 To use this app, first install the files:
 1. clone this repository
@@ -17,7 +17,7 @@ To see the results of the **test**:
 - Run the tests: `npm test`
 
 ## cpp-excercise (INCOMPLETE)
-This folder contains the C++ excercise.
+This folder contains the C++ excercise. The application computes the average of numbers in a text file.
 
 So far, only a simple library which computes the average is implemented.
 
