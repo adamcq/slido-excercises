@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 cmake_path(GET CMAKE_CURRENT_SOURCE_DIR PARENT_PATH PARENT_DIR)
-# include_directories(${PARENT_DIR}/MathFunctions)
+include_directories(${PARENT_DIR}/MathFunctions)
 
 # Setup testing
 enable_testing()
@@ -30,12 +30,8 @@ ExternalProject_Get_Property(gtest source_dir binary_dir)
 
 add_executable(AverageTests test.cpp)
 
-find_library(MATH_FUNCTIONS_LIB MathFunctions PATHS ${PARENT_DIR})
-if (NOT MATH_FUNCTIONS_LIB)
-    message(FATAL_ERROR "MathFunctions library not found")
-endif()
-
-target_link_libraries(AverageTests PUBLIC ${MATH_FUNCTIONS_LIB})
+# target_link_libraries(AverageTests PUBLIC ${MATH_FUNCTIONS_LIB})
+target_link_libraries(AverageTests PUBLIC MathFunctions)
 
 # Link test executable against gtest & gtest_main
 target_link_libraries(AverageTests ${GTEST_LIBRARY_DEBUG} ${GTEST_MAIN_LIBRARY_DEBUG})
@@ -46,7 +42,7 @@ add_test(
     COMMAND AverageTests
 )
 
-# Add MathFunctions to Average's target_include_directories()
+# Add MathFunctions to Tutorial's target_include_directories()
 target_include_directories(AverageTests PUBLIC
                           "${PROJECT_BINARY_DIR}"
                           "${PARENT_DIR}/MathFunctions"

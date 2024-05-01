@@ -17,7 +17,6 @@ add_subdirectory(tests)
 
 # add the executable
 add_executable(Average main.cpp)
-# add_executable(AverageTests tests/test.cpp)
 
 # Use target_link_libraries to link the library to our executable
 target_link_libraries(Average PUBLIC MathFunctions)
