@@ -37,4 +37,5 @@ To run the **test**:
 - run `./tests/AverageTests`
 
 **TODO:**
-1. Write a github actions workflow
+1. Use Google Benchmark
+2. Write a github actions workflow
