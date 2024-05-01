@@ -5,7 +5,7 @@ This folder contains the react excercise.
 
 To use this app, first install the files:
 1. clone this repository
-2. cd into the repository: `cd slido-excercises/react-excercies`
+2. cd into the repository: `cd slido-excercises/react-excercise`
 3. install dependencies: `npm install` 
 
 Afterwards, you can either run the app or run the tests.\
