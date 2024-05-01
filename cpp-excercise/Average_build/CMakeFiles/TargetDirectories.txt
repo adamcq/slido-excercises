@@ -1,6 +1,0 @@
-/Users/adamborgula/dev/slido/slido-excercises/cpp-excercise/Average_build/CMakeFiles/Average.dir
-/Users/adamborgula/dev/slido/slido-excercises/cpp-excercise/Average_build/CMakeFiles/edit_cache.dir
-/Users/adamborgula/dev/slido/slido-excercises/cpp-excercise/Average_build/CMakeFiles/rebuild_cache.dir
-/Users/adamborgula/dev/slido/slido-excercises/cpp-excercise/Average_build/MathFunctions/CMakeFiles/MathFunctions.dir
-/Users/adamborgula/dev/slido/slido-excercises/cpp-excercise/Average_build/MathFunctions/CMakeFiles/edit_cache.dir
-/Users/adamborgula/dev/slido/slido-excercises/cpp-excercise/Average_build/MathFunctions/CMakeFiles/rebuild_cache.dir
