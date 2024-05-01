@@ -19,7 +19,7 @@ To see the results of the **test**:
 ## cpp-excercise (INCOMPLETE)
 This folder contains the C++ excercise. The application computes the average of numbers in a text file.
 
-So far, only a simple library and testing is implemented.
+So far a simple library, tests and girhub workflow has been completed.
 
 To build the program in terminal:
 1. clone this repository
@@ -38,4 +38,3 @@ To run the **test**:
 
 **TODO:**
 1. Use Google Benchmark
-2. Write a github actions workflow
