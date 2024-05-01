@@ -27,7 +27,7 @@ To run the program in terminal:
 3. build the app `mkdir Average_build`
 4. cd into the build_folder `cd Average_build`
 5. create an input file `touch input.txt`
-6. insert an array of numbers into the file `echo -n "1 2 3 4 5 6 7 8 9 10" > input2.txt`
+6. insert an array of numbers into the file `echo -n "1 2 3 4 5 6 7 8 9 10" > input.txt`
 7. run `cmake ../Average`
 8. run `cmake --build .`
 9. run `./Average input.txt`
