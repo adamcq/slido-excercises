@@ -46,7 +46,7 @@ add_test(
     COMMAND AverageTests
 )
 
-# Add MathFunctions to Tutorial's target_include_directories()
+# Add MathFunctions to Average's target_include_directories()
 target_include_directories(AverageTests PUBLIC
                           "${PROJECT_BINARY_DIR}"
                           "${PARENT_DIR}/MathFunctions"
