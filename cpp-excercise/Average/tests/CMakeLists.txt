@@ -5,9 +5,6 @@ project(AverageTests VERSION 1.0)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-cmake_path(GET CMAKE_CURRENT_SOURCE_DIR PARENT_PATH PARENT_DIR)
-include_directories(${PARENT_DIR}/MathFunctions)
-
 # Setup testing
 enable_testing()
 find_package(GTest REQUIRED)
@@ -30,19 +27,23 @@ ExternalProject_Get_Property(gtest source_dir binary_dir)
 
 add_executable(AverageTests test.cpp)
 
-# target_link_libraries(AverageTests PUBLIC ${MATH_FUNCTIONS_LIB})
+# Link the MathFunctions library to the executable
 target_link_libraries(AverageTests PUBLIC MathFunctions)
 
 # Link test executable against gtest & gtest_main
 target_link_libraries(AverageTests ${GTEST_LIBRARY_DEBUG} ${GTEST_MAIN_LIBRARY_DEBUG})
 target_link_libraries(AverageTests PRIVATE GTest::GTest GTest::Main)
 
+# Add test commands to the project
 add_test(
     NAME AverageTests
     COMMAND AverageTests
 )
 
-# Add MathFunctions to Tutorial's target_include_directories()
+# Create a variable to store the path to the PARENT_DIR directory
+cmake_path(GET CMAKE_CURRENT_SOURCE_DIR PARENT_PATH PARENT_DIR)
+
+# Add MathFunctions to AverageTests's target_include_directories()
 target_include_directories(AverageTests PUBLIC
                           "${PROJECT_BINARY_DIR}"
                           "${PARENT_DIR}/MathFunctions"

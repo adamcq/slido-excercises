@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # to the source code
 configure_file(AverageConfig.h.in AverageConfig.h)
 
-# Use add_subdirectory() to add MathFunctions to this project
+# Use add_subdirectory() to add MathFunctions and tests to this project
 add_subdirectory(MathFunctions)
 add_subdirectory(tests)
 
@@ -21,14 +21,10 @@ add_executable(Average main.cpp)
 # Use target_link_libraries to link the library to our executable
 target_link_libraries(Average PUBLIC MathFunctions)
 
-# Add MathFunctions to Tutorial's target_include_directories()
+# Add MathFunctions to Average's target_include_directories()
+# add the binary tree to the search path for include files
+# so that we will find TutorialConfig.h
 target_include_directories(Average PUBLIC
                           "${PROJECT_BINARY_DIR}"
                           "${PROJECT_SOURCE_DIR}/MathFunctions"
                           )
-
-# add the binary tree to the search path for include files
-# so that we will find TutorialConfig.h
-target_include_directories(Average PUBLIC
-                           "${PROJECT_BINARY_DIR}"
-                           )
