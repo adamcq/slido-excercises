@@ -19,21 +19,22 @@ To see the results of the **test**:
 ## cpp-excercise (INCOMPLETE)
 This folder contains the C++ excercise. The application computes the average of numbers in a text file.
 
-So far, only a simple library which computes the average is implemented.
+So far, only a simple library and testing is implemented.
 
-To run the program in terminal:
+To build the program in terminal:
 1. clone this repository
 2. cd into the Average_build folder `cd slido-excercises/cpp-excercise`
 3. build the app `mkdir Average_build`
 4. cd into the build_folder `cd Average_build`
-5. create an input file `touch input.txt`
-6. insert an array of numbers into the file `echo -n "1 2 3 4 5 6 7 8 9 10" > input.txt`
-7. run `cmake ../Average`
-8. run `cmake --build .`
-9. run `./Average input.txt`
+5. run `cmake ../Average`
+6. run `cmake --build .`
 
-Any file containing space separated numbers can be used instead of *input.txt*
+To run the **program**:
+1. insert an array of numbers into the file `echo -n "1 2 3 4 5 6 7 8 9 10" > input.txt`
+2. run `./Average input.txt` (remark: Any file containing space separated numbers can be used instead of *input.txt*)
+
+To run the **test**:
+- run `./tests/AverageTests`
 
 **TODO:**
-1. Build unit tests with gtest
-2. Write a github actions workflow
+1. Write a github actions workflow
