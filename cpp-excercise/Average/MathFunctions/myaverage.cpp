@@ -1,6 +1,7 @@
 #include <vector> 
 #include "myaverage.h"
 
+// Implementation of the average function
 namespace mathfunctions {
   namespace detail {
     double myaverage(const std::vector<double> numbers) {
