@@ -13,9 +13,11 @@ configure_file(AverageConfig.h.in AverageConfig.h)
 
 # Use add_subdirectory() to add MathFunctions to this project
 add_subdirectory(MathFunctions)
+add_subdirectory(tests)
 
 # add the executable
 add_executable(Average main.cpp)
+# add_executable(AverageTests tests/test.cpp)
 
 # Use target_link_libraries to link the library to our executable
 target_link_libraries(Average PUBLIC MathFunctions)
