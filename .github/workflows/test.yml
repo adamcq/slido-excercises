@@ -1,0 +1,29 @@
+name: test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up CMake
+      uses: actions/setup-cmake@v1
+      with:
+        cmake-version: '3.27.9'  # Adjust this version as needed
+
+    - name: Build
+      run: |
+        cd cpp-excercise
+        mkdir Average_build
+        cd Average_build
+        cmake ../Average
+        cmake --build .
+
+    - name: Run tests
+      run: |
+        cd cpp-excercise/Average_build
+        ./tests/AverageTests
+
